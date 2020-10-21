@@ -1,0 +1,40 @@
+<nsDrawer:RadSideDrawer id="sideDrawer" xmlns:nsDrawer="nativescript-ui-sidedrawer" loaded="onLoaded">
+  <nsDrawer:RadSideDrawer.drawerTransition>
+    <nsDrawer:SlideInOnTopTransition/>
+  </nsDrawer:RadSideDrawer.drawerTransition>
+
+  <nsDrawer:RadSideDrawer.drawerContent>
+    <!-- Here go the side drawer items -->
+    <StackLayout>
+      <StackLayout id="header">
+        <Image id="icon" src="https://www.gstatic.com/webp/gallery/2.jpg" />
+        <Label id="headline" text="User Name" />
+        <Label id="subheadline" text="username@mail.com" />
+      </StackLayout>
+      <ScrollView>
+        <StackLayout id="itemsStack">
+          <StackLayout>
+            <Label text="Item 1" className="itemText"/>
+          </StackLayout>
+          <StackLayout>
+            <Label text="Item 2" className="itemText"/>
+          </StackLayout>
+          <StackLayout>
+            <Label text="Item 3" className="itemText"/>
+          </StackLayout>
+          <StackLayout>
+            <Label text="Item 4" className="itemText"/>
+          </StackLayout>
+          <StackLayout>
+            <Label text="Item 5" className="itemText"/>
+          </StackLayout>
+        </StackLayout>
+      </ScrollView>
+    </StackLayout>
+  </nsDrawer:RadSideDrawer.drawerContent>
+
+  <nsDrawer:RadSideDrawer.mainContent>
+    <!-- This is the navigation frame -->
+    <Frame defaultPage="main-page"></Frame> 
+  </nsDrawer:RadSideDrawer.mainContent>
+</nsDrawer:RadSideDrawer>
